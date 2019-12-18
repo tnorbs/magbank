@@ -11,16 +11,26 @@
     border-bottom: 0.1875rem var(--mag-secondary-color) solid;
 }
 
-@media screen and (max-width: 768px){
-    .btn-group-mag {
-        display: flex;
-        flex-direction: column;
+.navbar-brand-mag img {
+    width: 8.75rem;
+    height: auto;
+}
+
+.btn-group-mag {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand-mag {
+        margin-right: 6.562rem;
     }
 
     .navbar-brand-mag img {
-        width: 8.75rem;
+        width: 100%
         height: auto;
     }
     
-    
+    .btn-group-mag {
+        display: inline-flex;
+    }
 }
