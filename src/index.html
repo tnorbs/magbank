@@ -11,42 +11,92 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-dark bg-mag-main mag-border-bottom">
-            <a class="navbar-brand navbar-brand-mag" href="#">
-                <img src="assets/logo-mag.png" alt="MagBank">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cartão</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Quem somos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                </li>
-                </ul>
-            <div class="btn-group btn-group-mag" role="group">
-                <div class="btn-group" role="group">
-                    <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Acessar minha conta
-                    </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Pessoa Física</a>
-                    <a class="dropdown-item" href="#">Pessoa Jurídica</a>
+            <div class="container mx-auto">
+                <a class="navbar-brand navbar-brand-mag" href="#">
+                    <img src="assets/logo-mag.png" alt="MagBank">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cartão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    </ul>
+                <div class="btn-group btn-group-mag" role="group">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Acessar minha conta
+                        </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Pessoa Física</a>
+                        <a class="dropdown-item" href="#">Pessoa Jurídica</a>
+                    </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-light">abra sua conta</button>
                 </div>
                 </div>
-                <button type="button" class="btn btn-outline-light">abra sua conta</button>
-            </div>
             </div>
         </nav>
     </header>
 
+    <main>
+        <section class="banner">
+            <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#banner-carousel" data-slide-to="1"></li>
+                  <li data-target="#banner-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Banner Magic Pay">
+                        </picture>
 
+                        <div class="container-fluid mag-carousel-item-copy">
+                            <div class="row mag-banner-row">
+                                <img class="col-12 col-md-6 mag-banner-logo" src="assets/logo-magic-pay.png" alt="Logo Magic Pay">
+                                <div class="col-12 col-md-6 text-center text-md-left mt-5 mt-md-0">
+                                    <p class="text-light">Pague suas contas pelo nosso APP</p>
+                                    <button class="btn btn-outline-light btn-lg px-5 mt-4 mt-md-0">Abra sua conta</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Banner Magic Pay">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source srcset="assets/banner-desktop.jpg" media="(min-width: 768px)">
+                            <img class="d-block w-100" src="assets/banner-mobile.jpg" alt="Banner Magic Pay">
+                        </picture>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#banner-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#banner-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </section>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
