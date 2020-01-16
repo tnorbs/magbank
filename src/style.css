@@ -1,7 +1,5 @@
-:root {
-    --mag-main-color: #8c00b2;
-    --mag-secondary-color: #f05656; 
-}
+@import './_variables.css';
+@import './_utils.css';
 
 .bg-mag-main {
     background-color: var(--mag-main-color);
@@ -43,8 +41,38 @@
 }
 
 .mag-credit-card {
+    padding: 1rem;
     padding-top: 3.75rem;
     padding-bottom: 4.68rem;
+    font-size: 1.275rem;
+    color: var(--mag-copy-color);   
+}
+
+.mag-credit-card i {
+    font-size: 2.375rem;
+    
+}
+
+.mag-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.mag-icon-and-text {
+    display: grid;
+    grid-template-columns: 2.375rem auto;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+.mag-icon-and-text i{
+   place-self: center;
+}
+
+.mag-icon-and-text:last-of-type {
+    margin-bottom: 5rem;
 }
 
 
@@ -55,7 +83,7 @@
     }
 
     .navbar-brand-mag img {
-        width: 100%
+        width: 100%;
         height: auto;
     }
     
@@ -76,5 +104,16 @@
         padding-top: 6.15rem;
         padding-bottom: 5rem;
     }
+
+    .mag-title {
+        font-size: 3.5rem;
+    }
+
+    .mag-icon-and-text:last-of-type {
+        margin-bottom: 1.875rem;
+    }
 }
+    
+   
+
 

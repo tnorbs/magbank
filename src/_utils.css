@@ -1,0 +1,7 @@
+.mag-secondary-color {
+    color: var(--mag-secondary-color);
+}
+
+.mag-main-color {
+    color: var(--mag-main-color);
+}
