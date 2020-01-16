@@ -5,3 +5,15 @@
 .mag-main-color {
     color: var(--mag-main-color);
 }
+
+.mag-btn-secondary {
+    background-color: var(--mag-secondary-color);
+    border-color: var(--mag-secondary-color);
+    color: white; 
+}
+
+.mag-btn-secondary:hover {
+    color: white; 
+    filter: grayscale(20%);
+    
+}
