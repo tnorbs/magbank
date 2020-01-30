@@ -104,6 +104,8 @@
 }
 
 .mag-faq {
+    padding-top: 5rem;
+    padding-bottom: 5.625rem;
     color: #fff;
     background-color: var(--mag-faq-background);
 }
