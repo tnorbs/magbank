@@ -55,7 +55,7 @@
 
 .mag-title {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 3rem;
 }
 
@@ -101,6 +101,11 @@
 
 .mag-about-us i {
     font-size: 1.3rem;
+}
+
+.mag-faq {
+    color: #fff;
+    background-color: var(--mag-faq-background);
 }
 
 @media screen and (min-width: 768px) {
