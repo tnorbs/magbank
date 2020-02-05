@@ -71,7 +71,7 @@
    place-self: center;
 }
 
-.mag-icon-and-text:last-of-type {
+.mag-credit-card .mag-icon-and-text:last-of-type {
     margin-bottom: 5rem;
 }
 
@@ -108,6 +108,10 @@
     padding-bottom: 5.625rem;
     color: #fff;
     background-color: var(--mag-faq-background);
+}
+
+.mag-faq .mag-icon-and-text {
+    grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,9 +151,15 @@
     }
 
     .mag-about-us {
-    padding-top: 7.5rem;
-    padding-bottom: 6.25rem;
+        padding-top: 7.5rem;
+        padding-bottom: 6.25rem;
     }
+
+    .mag-faq .mag-icon-and-text {
+        grid-template-columns: 2.375rem auto;
+    }
+
+    
 }
     
    
