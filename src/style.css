@@ -31,7 +31,7 @@
 }
 
 .mag-banner-logo {
-    max-width: 20rem;
+    max-width: 19rem;
     height: auto;
     margin: 0 auto;
 }
@@ -71,10 +71,6 @@
    place-self: center;
 }
 
-.mag-credit-card .mag-icon-and-text:last-of-type {
-    margin-bottom: 5rem;
-}
-
 .mag-about-us {
     padding-top: 6.5rem;
     padding-bottom: 7.25rem;
@@ -111,7 +107,28 @@
 }
 
 .mag-faq .mag-icon-and-text {
+    cursor: pointer;
     grid-template-columns: 1fr;
+    color: var(--mag-faq-inactive);
+}
+
+.mag-faq .card {
+    background: unset;
+    border-color: var(--mag-faq-color);
+}
+
+.mag-faq .card-header {
+    cursor: pointer;
+    background-color: var(--mag-faq-color);
+}
+
+.mag-faq .card-header h5 {
+    font-weight: 300;
+}
+
+.mag-faq h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -146,7 +163,7 @@
         font-size: 3.5rem;
     }
 
-    .mag-icon-and-text:last-of-type {
+    .mag-credit-card .mag-icon-and-text:last-of-type {
         margin-bottom: 1.875rem;
     }
 
