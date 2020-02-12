@@ -135,6 +135,17 @@
     color: #7c7c7c; 
 }
 
+.mag-login {
+    display: grid; 
+    place-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #7c3ab1, #a73546);
+}
+
+.form-group {
+    max-width: 20rem;
+}
+
 @media screen and (min-width: 768px) {
     .navbar-brand-mag {
         margin-right: 6.562rem;
